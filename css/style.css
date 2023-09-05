@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/h.jpg);
+}
+.parent1 , .parent2 ,.parent3 ,.parent4{
+    width: 100%;
+    height: 187px;
+    background-image: url(../images/h.jpg);
+}
+.div1{
+    width: 200px;
+    height: 170;
+    position: absolute;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-image: url(../images/D.png);
+    background-size: cover;
+}
+@keyframes first{
+    from{
+        left: 0;
+    }
+    to{
+        left: 1300px;
+    }
+}
+/* ///////////////////// */
+.div2{
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+    width: 200px;
+    height: 200;
+    background-image: url(../images/child.png);
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+    animation-name: second;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+@keyframes second {
+    from{
+        left: 0;
+    }
+    to{
+        left: 1300px;
+    }
+
+}
+/* //////////////////////// */
+.div3{
+    width: 200px;
+    height: 170;
+    top: 350px;
+    background-image: url(../images/D.png);
+    background-size: cover;
+    position: absolute;
+    animation-name: third;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes third{
+    from{
+        left: 0;
+    }
+    to{
+        left: 1300px;
+    }
+}
+/* ////////////////////// */
+.div4{
+    width: 200px;
+    height: 200;
+    background-image: url(../images/child.png);
+    background-size: cover;
+    position: absolute;
+    top: 520px;
+    animation-name: fourth;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+
+}
+@keyframes fourth{
+    from{
+        left: 0;
+    }
+    to{
+        left: 1300px;
+    }
+
+}
